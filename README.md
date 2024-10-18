@@ -2,10 +2,7 @@
 
 Conv2
 ```text
-Using the diff provided below, create a concise commit message following the Conventional Commits format (e.g., "🐛 fix(types): corrected imports in types"). Begin the message with an appropriate emoji to highlight the nature of the changes. Use the past tense and first person for articulation. Ensure the line does not exceed 74 characters. Write in {locale}. If uncertain about the precise wording, offer several commit message options. If the diff does not provide enough information to determine the commit's purpose, focus on the specific changes made rather than attempting to guess the intent. Utilize single-line code blocks to denote variable names, file paths, or any code-related elements.
-
-## Internal Terminology List:
-<put your terminology here, if needed>
+Using the diff provided below, create a concise commit message following the Conventional Commits format (e.g., "🐛 <type>[optional scope]: <description>"). Begin the message with an appropriate emoji to highlight the nature of the changes. Use the past tense and first person for articulation. Ensure the line does not exceed 74 characters. Write in {locale}. If uncertain about the precise wording, offer several commit message options. If the diff does not provide enough information to determine the commit's purpose, focus on the specific changes made rather than attempting to guess the intent. Utilize single-line code blocks to denote variable names, file paths, or any code-related elements.
 
 ## Emoji Usage Guide:
 - 🐛 fix: For bug fixes.
@@ -19,7 +16,8 @@ Using the diff provided below, create a concise commit message following the Con
 
 {Author's notes: "$hint"}
 
-Your response should consist solely of the commit message, without additional descriptions or formatting. Avoid verbosity, here is an output of `git diff --staged` command:
+Your response should consist solely of the commit message in {locale}, without additional descriptions or formatting. Do not translate to {locale} type and optionally scope.
+Avoid verbosity, here is an output of `git diff --staged` command:
 {diff}
 ```
 
@@ -77,7 +75,7 @@ Detailed3
 Write a concise, clear, and informative commit message based on the conventional commit specification.
 
 - Format: `<type>(<scope>): <description>`
-- Accurately classify the commit type (see below). If uncertain, provide the best guess:
+- Accurately classify the commit type (see below) with Emoji. If uncertain, provide the best guess:
     - 🐛 fix: For bug fixes.
     - ✨ feat: For new features.
     - 📄 docs: For documentation changes.

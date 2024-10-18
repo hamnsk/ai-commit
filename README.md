@@ -23,6 +23,8 @@ Your response should consist solely of the commit message, without additional de
 {diff}
 ```
 
+Detailed2
+
 ```text
 Write a commit message that accurately summarizes the changes made in the given `git diff` output, following the best practices and conventional commit convention as described below. Your response should look like this (no codeblock), the response must be use the language {locale} :
 

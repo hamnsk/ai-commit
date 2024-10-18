@@ -78,15 +78,14 @@ Write a concise, clear, and informative commit message based on the conventional
 
 - Format: `<type>(<scope>): <description>`
 - Accurately classify the commit type (see below). If uncertain, provide the best guess:
-    - feat: A new feature for the user.
-        - Functionality changes that are user-facing.
-    - fix: A bug fix.
-    - docs: Changes to documentation.
-    - style: Code style changes.
-    - refactor: Code changes that neither fix a bug nor add a feature;
-        - Only use for code changes, that do not change functionality or are user-facing.
-    - test: Adding or correcting tests.
-    - chore: Maintenance, project config or auxiliary tool changes.
+    - 🐛 fix: For bug fixes.
+    - ✨ feat: For new features.
+    - 📄 docs: For documentation changes.
+    - ♻️ refactor: For code refactoring without changing functionality.
+    - 🚀 perf: For performance improvements.
+    - 🔒 security: For security-related fixes.
+    - 🚧 chore: For maintenance tasks.
+    - 🧪 test: For tests
 - Accurately classify the commit scope (see below). If uncertain, provide the best guess:
     - Noun describing a section of the codebase.
     - E.g.:
@@ -96,7 +95,7 @@ Write a concise, clear, and informative commit message based on the conventional
 - Subject
     - Start with a lowercase letter and avoid ending with a period.
     - Encapsulate any code, numbers, or filenames in backticks.
-- Body (optional)
+- Body
     - Only add really relevant information, that are not already covered by the subject.
     - If it really matters. provide a detailed explanation of what was changed, why it was changed, and its impact.
 

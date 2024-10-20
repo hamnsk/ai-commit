@@ -1,5 +1,6 @@
 # ai-commit
 
+
 Conv2
 ```text
 Using the diff provided below, create a concise commit message following the Conventional Commits format (e.g., "🐛 <type>[optional scope]: <description>"). Begin the message with an appropriate emoji to highlight the nature of the changes. Use the past tense and first person for articulation. Ensure the line does not exceed 74 characters. Write in {locale}. If uncertain about the precise wording, offer several commit message options. If the diff does not provide enough information to determine the commit's purpose, focus on the specific changes made rather than attempting to guess the intent. Utilize single-line code blocks to denote variable names, file paths, or any code-related elements.
@@ -14,11 +15,72 @@ Using the diff provided below, create a concise commit message following the Con
 - 🚧 chore: For maintenance tasks.
 - 🧪 test: For tests
 
-{Author's notes: "$hint"}
+## Guidelines:
+
+1. Use emojis to indicate completion or significant milestones.
+2. Start with a brief description of what was added, changed, or fixed.
+3. List each specific feature or file that was impacted by the commit, along with a short explanation of its purpose if necessary.
+
+## Example:
+
+🎉 Add initial implementation of the Flask search application
+
+    - Created app.py with Flask setup, routes, and search functionality.
+    - Added config.py for configuration management.
+    - Implemented SearchService class in search_service.py to interface with Tavily API.
+    - Created basic styles in static/css/style.css.
+    - Added client-side validation with static/js/script.js.
+    - Created index.html and results.html templates for the search interface and results display.
+    - Included logo.svg for branding.
 
 Your response should consist solely of the commit message in {locale}, without additional descriptions or formatting. Do not translate to {locale} type and optionally scope.
 Avoid verbosity, here is an output of `git diff --staged` command:
 {diff}
+```
+
+```text
+ Task: Generate a concise and informative git commit message based on the diff provided below.
+
+Guidelines:
+1. Use emojis (🎉) to indicate completion or significant milestones.
+2. Start with a brief description of what was added, changed, or fixed.
+3. List each specific feature or file that was impacted by the commit, along with a short explanation of its purpose if necessary.
+4. Keep the message under 50 characters for clarity and ease of reading in git logs.
+
+Example:
+🎉 Add initial implementation of the Flask search application
+- Created `app.py` with Flask setup, routes, and search functionality.
+- Added `config.py` for configuration management.
+- Implemented `SearchService` class in `search_service.py` to interface with Tavily API.
+- Created basic styles in `static/css/style.css`.
+- Added client-side validation with `static/js/script.js`.
+- Created `index.html` and `results.html` templates for the search interface and results display.
+- Included `logo.svg` for branding.
+
+Your response should consist solely of the commit message in {locale}.
+Avoid verbosity, here is an output of `git diff --staged` command:
+{diff}
+```
+
+```text
+Task: Generate a concise and informative git commit message based on the diff provided below.
+
+Guidelines:
+
+Use emojis (🎉) to indicate completion or significant milestones.
+Start with a brief description of what was added, changed, or fixed.
+List each specific feature or file that was impacted by the commit, along with a short explanation of its purpose if necessary.
+Keep the message under 50 characters for clarity and ease of reading in git logs.
+Example:
+🎉 Add initial implementation of the Flask search application
+
+Created app.py with Flask setup, routes, and search functionality.
+Added config.py for configuration management.
+Implemented SearchService class in search_service.py to interface with Tavily API.
+Created basic styles in static/css/style.css.
+Added client-side validation with static/js/script.js.
+Created index.html and results.html templates for the search interface and results display.
+Included logo.svg for branding.
 ```
 
 Detailed2

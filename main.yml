@@ -1,0 +1,6 @@
+---
+settings:
+    default:
+        language: en
+        timezone: UTC
+        emoji: 🐛
